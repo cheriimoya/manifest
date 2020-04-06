@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="gitlab"
-           fetch="ssh://git@gitlab.com" />
+      fetch="https://gitlab.com" />
 
   <!-- Extra packages not included in the main manifest -->
   <project name="LineageOS/android_device_xiaomi_common" path="device/xiaomi/common"/>
-  <project name="LineageOS/android_device_xiaomi_davinci" path="device/xiaomi/davinci"/>
-  <project name="LineageOS/android_device_xiaomi_sm6150-common" path="device/xiaomi/sm6150-common"/>
-  <project name="LineageOS/android_kernel_xiaomi_sm6150" path="kernel/xiaomi/sm6150" revision="refs/changes/18/269418/9"/>
+  <project name="LineageOS/android_device_xiaomi_davinci" path="device/xiaomi/davinci" revision="refs/changes/56/272156/2"/>
+  <project name="LineageOS/android_device_xiaomi_sm6150-common" path="device/xiaomi/sm6150-common" revision="refs/changes/39/272239/1"/>
+  <project name="LineageOS/android_kernel_xiaomi_sm6150" path="kernel/xiaomi/sm6150"/>
   <project name="pig.priv/proprietary_vendor_xiaomi" path="vendor/xiaomi" remote="gitlab" revision="lineage-17.1"/>
-
-  <!--Gapps-->
-  <project name="luk1337/android_vendor_extra" path="vendor/extra" remote="private" />
-  <project name="pig.priv/android_vendor_gapps" path="vendor/gapps" remote="gitlab" revision="ten" />
 </manifest>
